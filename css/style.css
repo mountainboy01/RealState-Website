@@ -749,6 +749,10 @@ html{
 }
 
 @media only screen and (max-width:576px){
+.contact .subscribe{
+    padding: 60px 10px;
+}
+
 .contact .subscribe .row .col .input-box input[type="text"]{
     padding: 20px 10px;
 }
