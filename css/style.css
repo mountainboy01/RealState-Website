@@ -339,6 +339,11 @@ html{
 
 /************************HERO SECTION MEDIA QUERY****************************/
 @media only screen and (max-width:380px){
+.form .form-container .form-btn .form-link{
+    padding: 15px 20px;   
+}
+
+
 .form .form-container .form .form-row{
     border-top-right-radius: 0px;
 }
