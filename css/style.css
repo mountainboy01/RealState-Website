@@ -166,7 +166,7 @@ html{
 }
 
 .hero .hero-container{
-    background:linear-gradient(to right, rgb(19 25 41 / 50%), rgb(15 18 28 / 50%)) , url('../images/hero-bg.jpg');
+    background:linear-gradient(to right, rgb(19 25 41 / 80%), rgb(15 18 28 / 80%)) , url('../images/hero-bg.jpg');
     width: 100%;
     min-height: 100vh;
     background-repeat: no-repeat;
@@ -338,14 +338,20 @@ html{
 
 
 /************************HERO SECTION MEDIA QUERY****************************/
+@media only screen and (max-width:576px){
+
+.form .form-container .form .form-row{
+    padding: 20px 0px;
+}
+
+.form .form-container .form .form-row .form-col{
+    padding: 5px 10px;
+}
+}
+
 @media only screen and (max-width:380px){
 .form .form-container .form-btn .form-link{
     padding: 15px 20px;   
-}
-
-
-.form .form-container .form .form-row{
-    border-top-right-radius: 0px;
 }
 }
     
@@ -692,7 +698,11 @@ html{
 
 .contact .subscribe .row{
    display: flex;
-   justify-content: space-between;
+   grid-gap: 0px;
+}
+
+.contact .subscribe .row .col{
+    flex:1;
 }
 
 .contact .subscribe .row .col h1{
@@ -718,12 +728,12 @@ html{
 
 .contact .subscribe .row .col .input-box input[type="text"]{
     flex:1;
-    padding: 20px 20px;
+    padding: 20px 30px;
     outline: none;
     border: none;
 }
 
-.contact .subscribe .row .col .input-box input[type="button"]{
+.contact .subscribe .row .col .input-box input[type="submit"]{
     padding: 10px 30px;
     outline: none;
     border: none;
@@ -734,7 +744,7 @@ html{
     transition: all 0.5s;
 }
 
-.contact .subscribe .row .col .input-box input[type="button"]:hover{
+.contact .subscribe .row .col .input-box input[type="submit"]:hover{
    background: var(--dark-green);
 }
 
@@ -749,7 +759,7 @@ html{
 }
 
 .contact .subscribe .row .col{
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 }
 
@@ -757,12 +767,8 @@ html{
 .contact .subscribe{
     padding: 60px 10px;
 }
-
-.contact .subscribe .row .col .input-box input[type="text"]{
-    padding: 20px 10px;
-}
     
-.contact .subscribe .row .col .input-box input[type="button"]{
+.contact .subscribe .row .col .input-box input[type="submit"]{
     padding: 10px 20px;
 } 
 }
@@ -780,7 +786,7 @@ html{
 }
 
 .footer .footer-row{
-    display: flex;
+    display:flex;
     gap: 30px;
     margin-top: 60px;
 }

@@ -66,13 +66,14 @@
             </div>
         </div>
         <div class="form">
+        	<form>
             <div class="form-row">
                 <div class="form-col">
                     <div class="form-input">
                         <label for="search">Search:*</label>
                         <div class="search">
                             <i class="fa-solid fa-search"></i>
-                            <input type="search" placeholder="Search your home">
+                            <input type="search" placeholder="Search your home" required>
                         </div>
                     </div>
                 </div>
@@ -80,7 +81,7 @@
                 <div class="form-col">
                     <div class="form-input">
                         <label for="search">Select Categories:</label>
-                       <select>
+                       <select required>
                            <option value="House" selected>House</option>
                            <option value="Appartment">Appartment</option>
                            <option value="Offices">Offices</option>
@@ -92,7 +93,7 @@
                 <div class="form-col">
                     <div class="form-input">
                         <label for="search">Min Price:</label>
-                       <select>
+                       <select required>
                            <option value="" selected>Min Price</option>
                            <option value="1000" selected>1000</option>
                            <option value="2000">2000</option>
@@ -105,7 +106,7 @@
                 <div class="form-col">
                     <div class="form-input">
                         <label for="search">Max Price:</label>
-                       <select>
+                       <select required>
                            <option value="" selected>Mix Price</option>
                            <option value="1000" selected>1000</option>
                            <option value="2000">2000</option>
@@ -116,10 +117,10 @@
                 </div>
 
                 <div class="form-col btn">
-                      <button type="button">Search Now</button>
+                      <button type="submit">Search Now</button>
                 </div>
-
             </div>
+        </form>
         </div>
     </div>
 </section>
@@ -414,10 +415,12 @@
             </div>
 
             <div class="col">
+             <form>
                 <div class="input-box">
                     <input type="text" placeholder="Enter your email:" required>
-                    <input type="button" value="Subscribe">
+                    <input type="submit" value="Subscribe">
                 </div>
+             </form>
             </div>
         </div>
     </div>
@@ -484,7 +487,7 @@
 <section class="footer-main">
     <div class="main-content container">
         <div class="footer-text">
-            <p>&copy; 2022 Realvine. All Right Reserved by codewithsadee.</p>
+            <p>&copy; 2022 Realvine. All Right Reserved by MountainBoy.</p>
         </div>
 
         <ul>
